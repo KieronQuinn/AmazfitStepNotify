@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Step Notify</string>
+    <string name="notification_title">Step Alert</string>
+    <string name="notification_content">You have only walked %1d steps this hour, go for a walk to get to 250 steps!</string>
+    <string name="notification_content_zero">You have not walked any steps this hour, go for a walk to get to 250 steps!</string>
+    <string name="main_activity_content">You will now be notified at the times set in the settings (default 9:50 – 17:50) if you need to be more active</string>
+    <string name="settings">Settings</string>
+    <string name="set_times">Set Times</string>
+    <string name="set_times_c">Change times where you are notified</string>
+    <string name="vibrate">Vibrate</string>
+    <string name="vibrate_c">Vibrate on notification</string>
+    <string name="set_days">Set Days</string>
+    <string name="set_days_c">Set days of the week to notify on</string>
+
+    <!-- Days of week -->
+    <string name="sunday">Sunday</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+</resources>

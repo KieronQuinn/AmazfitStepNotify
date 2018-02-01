@@ -1,0 +1,58 @@
+<!--
+    Android Wear framework is not provided on the Pace, and thus everything must be done manually with scrolling views and large padding
+ -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/padding_round"
+    android:paddingRight="@dimen/padding_round"
+    android:clipToPadding="false"
+    android:scrollbars="none"
+    android:paddingBottom="@dimen/padding_round_large">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:text="@string/app_name"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"/>
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/main_activity_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button_bg"
+                android:onClick="close"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/check" />
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button_bg_grey"
+                android:onClick="settings"
+                android:src="@drawable/settings" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+
